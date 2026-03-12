@@ -4,7 +4,7 @@
 # um número sorteado.
 # - possibilidade do usuário escolher a dificuldade por meio de um menu de opções. 
 # - níveis de dificuldade.
-# - dicas no jogo, informando se o número sorteado é maior ou menor que o chute do usuário.
+# - dicas no jogo, informando se o número sorteado é maior ou menor que o chute.
 
 import random
 
