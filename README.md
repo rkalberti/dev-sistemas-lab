@@ -1,4 +1,4 @@
-🧪 dev-sistemas-lab
+💻 DISCIPLINA - Programação no Desenvolvimento de Sistemas 
 
 📚 Repositório dedicado às atividades da disciplina Programação no Desenvolvimento de Sistemas.
 
@@ -27,4 +27,4 @@ Organizar e registrar meu aprendizado de programação, reunindo atividades dese
 
 ---
 
-✨ Repositório criado para fins de estudo e prática em programação.
+Repositório criado para fins de estudo e prática em programação.
