@@ -21,7 +21,6 @@ def escolher_jogo():
                 print("Saindo...")
                 break 
             else:
-                # O print de opção inválida deve ficar aqui, no else do if
                 print("Opção inválida! Digite 1, 2 ou 3.\n")
         
         except ValueError:
