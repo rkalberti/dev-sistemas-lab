@@ -1,4 +1,4 @@
-import adivinhacao 
+import jogo_adivinhacao 
 import jogo_forca
 
 def escolher_jogo():
@@ -13,7 +13,7 @@ def escolher_jogo():
 
             if opcao == 1:
                 print("Jogando Adivinhação...\n")
-                adivinhacao.jogar()
+                jogo_adivinhacao.jogar()
             elif opcao == 2:
                 print("Jogando Forca...\n")
                 jogo_forca.jogar()
