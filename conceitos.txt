@@ -1,1 +1,219 @@
-.
+CONCEITOS TÉCNICOS
+
+# Linguagem
+Características:
+- Linguagem interpretada
+- Sensível à indentação (uso de espaços)
+- Uso de ":" para iniciar blocos de código
+
+Exemplo:
+if idade >= 18:
+    print("Maior de idade")
+
+
+# Paradigmas de Programação
+
+## Programação Procedural
+Baseada em sequência de comandos e funções.
+O código é executado de cima para baixo.
+
+Exemplo:
+nome = "Ketlyn"
+print(nome)
+
+## Programação Orientada a Objetos (POO)
+Baseada em objetos, classes e atributos.
+
+Conceitos principais:
+- Classe -> modelo
+- Objeto -> instância da classe
+- Atributo -> característica
+- Método -> função dentro da classe
+
+Exemplo:
+class Pessoa:
+    def __init__(self, nome):
+        self.nome = nome
+
+p = Pessoa("Ketlyn")
+print(p.nome)
+
+
+# Variáveis
+Espaços na memória que armazenam valores.
+Tipagem dinâmica (não precisa declarar tipo).
+
+Exemplo:
+nome = "Ketlyn"
+idade = 16
+
+
+# Tipos de Dados Primitivos
+
+str   -> string (texto)
+int   -> inteiro
+float -> ponto flutuante
+bool  -> booleano (True / False)
+
+
+# Operadores
+
+## Aritméticos
++   adição
+-   subtração
+*   multiplicação
+/   divisão
+
+## Relacionais (Comparação)
+==  igual a
+!=  diferente de
+>   maior que
+<   menor que
+>=  maior ou igual
+<=  menor ou igual
+
+## Lógicos
+and -> E
+or  -> OU
+not -> NÃO
+
+Exemplo:
+if idade >= 18 and idade <= 60:
+    print("Adulto")
+
+
+# Estruturas Condicionais
+
+Permitem tomada de decisão.
+
+if, elif, else
+
+Exemplo:
+if idade >= 18:
+    print("Maior")
+elif idade >= 13:
+    print("Adolescente")
+else:
+    print("Criança")
+
+
+# Estruturas de Repetição
+
+## While
+Executa enquanto a condição for verdadeira.
+
+contador = 1
+while contador <= 10:
+    print(contador)
+    contador += 1
+
+## For
+Percorre estruturas iteráveis (listas, strings, etc).
+
+for i in range(5):
+    print(i)
+
+
+# Estruturas de Dados
+
+## Lista (list)
+Coleção ordenada e mutável.
+
+Exemplo:
+nomes = ["Ana", "Carlos", "Julia"]
+
+## Índice
+Posição do elemento (começa em 0)
+
+Exemplo:
+print(nomes[0])
+
+
+# Métodos de Lista
+
+append() -> adiciona elemento
+remove() -> remove elemento
+len()    -> tamanho
+
+
+# Entrada e Saída
+
+## Entrada (input)
+Recebe dados do usuário (tipo string)
+
+## Saída (print)
+Exibe dados no terminal
+
+
+# Manipulação de Arquivos
+
+Permite leitura e escrita de arquivos.
+
+Modos:
+"r" -> leitura
+"w" -> escrita
+"a" -> adicionar
+
+Exemplo:
+with open("arquivo.txt", "r") as arquivo:
+    dados = arquivo.read()
+
+
+# Funções
+
+Blocos de código reutilizáveis.
+
+Exemplo:
+def saudacao(nome):
+    print(f"Olá, {nome}")
+
+
+
+
+# Execução de programas Python no terminal
+
+
+## WINDOWS
+
+Normalmente usa:
+python nomedoarquivo.py
+
+Ou (dependendo da instalação):
+py nomedoarquivo.py
+
+
+## Linux / macOS
+
+Geralmente usa:
+python3 nomedoarquivo.py
+
+Isso acontece porque o sistema pode ter Python 2 e Python 3 instalados.
+
+
+## Verificar versão do Python
+
+python --version
+python3 --version
+
+
+## Observação
+
+Se o comando "python" não funcionar:
+- Pode não estar instalado
+- Pode não estar no PATH do sistema
+
+Nesse caso, é necessário instalar ou configurar o ambiente.
+
+
+## Execução direta (Linux/macOS)
+
+Também é possível rodar o arquivo como executável:
+
+1. Adicionar no início do arquivo:
+#!/usr/bin/env python3
+
+2. Dar permissão:
+chmod +x nomedoarquivo.py
+
+3. Executar:
+./nomedoarquivo.py
