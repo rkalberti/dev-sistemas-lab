@@ -1,7 +1,7 @@
 # Aula 4 - Arquivos (ler e escrever)
 
 
-# ---- Lendo arquivo (seu código) ----
+# -------- Lendo arquivo --------
 
 palavras = []
 
