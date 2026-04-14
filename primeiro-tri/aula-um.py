@@ -71,3 +71,4 @@ print(f"Divisão: {num1 / num2}")
 print(nome.upper())  # tudo maiúsculo
 print(nome.lower())  # tudo minúsculo
 print(len(nome))     # quantidade de letras
+
