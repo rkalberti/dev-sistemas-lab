@@ -1,0 +1,48 @@
+[
+    {
+        "titular": "Dustin Hoffmann",
+        "agencia": "1003",
+        "numero": "2064-4",
+        "cpf": "456.789.123-11",
+        "saldo": 0,
+        "senha": 727416,
+        "chavepix": []
+    },
+    {
+        "titular": "Dean Winchester",
+        "agencia": "0012",
+        "numero": "6141-5",
+        "cpf": "127.853.967-80",
+        "saldo": 0,
+        "senha": 628565,
+        "chavepix": []
+    },
+    {
+        "titular": "Sam Winchester",
+        "agencia": "0012",
+        "numero": "3132-7",
+        "cpf": "284.651.039-75",
+        "saldo": 0,
+        "senha": 883840,
+        "chavepix": []
+    },
+    {
+        "titular": "Scott Smith",
+        "agencia": "1003",
+        "numero": "9966-6",
+        "cpf": "392.847.105-68",
+        "saldo": 0,
+        "senha": 463985,
+        "chavepix": []
+    },
+    {
+        "titular": "William Bruce Rose Jr.",
+        "agencia": "1003",
+        "numero": "2055-5",
+        "cpf": "518.293.046-72",
+        "saldo": 0,
+        "senha": 416785,
+        "chavepix": []
+    }
+]
+
