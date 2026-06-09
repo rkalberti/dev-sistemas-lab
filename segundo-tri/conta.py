@@ -2,67 +2,61 @@
 # MÉTODO CONSTRUTOR: cria um objeto conforme a nessessidade do usuário
 
 import random
-
-class Conta: 
-    def __init__(self, titular, cpf, limite, chave_pix, senha):
-
-        # Propriedades
+class Conta:
+    def __init__(self, titular, agencia, cpf):
         self.__titular = titular
+        self.__agencia = agencia
+        self.__numero = f"{random.randint(1000, 9999)}-{random.randint(1,9)}"
         self.__cpf = cpf
-        self.__agencia = 2026
-        self.__conta = random.randint(100000, 999999)
         self.__saldo = 0
-        self.__limite = limite
-        self.__chave_pix = chave_pix
-        self.__senha = senha
-
-    # Getter
+        self.__senha = random.randint(100000, 999999)
+        self.__chavepix = []
+    
+    #encapsulamento (getters e setters)
     @property
     def titular(self):
         return self.__titular
-
-    # Setter
     @titular.setter
     def titular(self, novo_nome):
         self.__titular = novo_nome
+    @property
+    def agencia(self):
+        return self.__agencia
+    @property
+    def numero(self):
+        return self.__numero
+    @property
+    def cpf(self):
+        return self.__cpf
+    @property
+    def saldo(self):
+        return self.__saldo
+    @property
+    def chavepix(self):
+        return self.__chavepix
+    @property
+    def senha(self):
+        return self.__senha
+    
 
-    # Extrato
+    # métodos da classe
     def extrato(self):
-        print(f"""
-Titular: {self.__titular}
-Agência: {self.__agencia}
-Conta: {self.__conta}
-Saldo: R${self.__saldo}
-""")
+        print(f"O saldo da {self.__titular} é {self.__saldo}")
 
-    # Sacar
-    def sacar(self, valor):
-
-        if valor <= self.__saldo and valor > 0:
-            self.__saldo -= valor
-            print("Saque efetuado com sucesso!")
-            return True
-
-        else:
-            print("Não foi possível efetuar o saque!")
-            return False
-
-    # Depositar
-    def depositar(self, valor):
-
+    def deposito(self, valor):
         if valor > 0:
-            self.__saldo += valor
-            print("Depósito realizado com sucesso!")
-
+            self.__saldo = self.__saldo + valor
+            print("Depósito efetuado com sucesso!")
         else:
-            print("Valor inválido!")
+            print("Não foi possível depositar!")
 
-    # Transferir
+    def saque(self, valor):
+        if valor <= self.__saldo and valor > 0:
+            self.__saldo = self.__saldo - valor
+            print("Saque efetuado com sucesso!")
+        else:
+            print("Erro ao efetuar saque")
+
     def transferir(self, valor, conta_destino):
-
-        if self.sacar(valor):
-            conta_destino.depositar(valor)
-            print("Transferência realizada com sucesso!")
-
-        else:
-            print("Transferência não realizada!")
+        self.saque(valor)
+        conta_destino.deposito(valor)
