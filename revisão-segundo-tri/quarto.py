@@ -7,7 +7,8 @@ class Quarto:  #cria a classe
         self.__disponivel = True
 
     # Getters
-    @property #Permite acessar o atributo sem escrever diretamente
+    @property 
+    #Permite acessar o atributo sem escrever diretamente
     def numero(self):
         return self.__numero
 
