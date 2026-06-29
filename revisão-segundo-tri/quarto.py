@@ -1,14 +1,16 @@
-class Quarto:  #cria a classe
+# Classe 
+
+class Quarto:  # cria a classe
 
     def __init__(self, numero, tipo, diaria):
-        self.__numero = numero #self.__ (atributo privado) 
+        self.__numero = numero # self.__ (atributo privado) 
         self.__tipo = tipo
         self.__diaria = diaria
         self.__disponivel = True
 
     # Getters
     @property 
-    #Permite acessar o atributo sem escrever diretamente
+    # permite acessar o atributo sem escrever diretamente
     def numero(self):
         return self.__numero
 
@@ -25,7 +27,7 @@ class Quarto:  #cria a classe
         return self.__disponivel
 
     # Métodos
-    def exibir_detalhes(self): #Mostra as informações.
+    def exibir_detalhes(self): # função - mostra as informações.
         print(f"Número: {self.__numero}")
         print(f"Tipo: {self.__tipo}")
         print(f"Diária: R${self.__diaria}")
